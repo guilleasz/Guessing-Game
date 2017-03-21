@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+      <div class="container" id='app'>
+
+        <div class="center" id='headers'>
+          <h1>Guessing Game!</h1>
+          <h2>Guess a number between 1-100</h2>
+        </div>
+
+        <div class=center id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id="player-input" type="text" autofocus placeholder="#"  maxLength="3" min="0">
+            <input id="submit-btn" value="Go!" type="submit">
+          </div>
+
+          <div id='guesses'>
+            <ul class="guess">
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+            </ul>
+          </div>
+
+          <div class="center" id="menu-btns">
+            <button  id='hint' class="btn btn-default">Hint</button><button id='reset' class="btn btn-default">Reset</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="container center" id='footer'>
+        <div class='row'>
+          <div class='col-md-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div id="owner" class='col-md-4'>
+            <h4>Project by Guille Aszyn</h4>
+          </div>
+
+          <div class='col-md-4'>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+        </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="GuessingGame-Part2/GuessingGame.js"></script>
+  </body>
+</html>
