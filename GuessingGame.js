@@ -92,9 +92,9 @@ $(document).ready(() => {
     submitPlayerGuess(game.playersGuessSubmission(Number($('#player-input').val())));
     $('#player-input').val('');
   })
-    $('#submit-btn').keypress((e) => {
-      if (e.keyCode === '13') {
-        $(e.target).click();
+    $('#player-input').keypress((e) => {
+      if (e.keyCode === 13) {
+        $('#submit-btn').click();
       }
     })
     $('#reset').click(() => {
